@@ -1,0 +1,19 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_skeletyl_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "skeletyl"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_skeletyl_LEFT || SHIELD_skeletyl_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
